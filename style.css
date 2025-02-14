@@ -8,6 +8,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .container {
@@ -30,11 +31,12 @@ body {
     height: 31%;
     filter: drop-shadow(5px 5px 5px rgb(200, 200, 200));
     position: relative;
-
+    font-size: 0;
 }
 
 .square:hover {
     background-color: rgb(175, 175, 175);
+    transition: 0.5s;
 }
 
 .line {
@@ -74,4 +76,14 @@ body {
     width: 50%;
     height: 50%;
     background-color: inherit;
+}
+
+h1 {
+    font-size: 250px;
+    position: absolute;
+    top: 0%;
+    border: solid rgb(0, 0, 0) 10px;
+    background-color: white;
+    border-radius: 50px;
+    display: none;
 }
